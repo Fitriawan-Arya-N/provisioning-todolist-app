@@ -47,7 +47,7 @@ pipeline {
             }
         }
 
-        stage('Terraform Plan') {
+        stage('Terraform Aplly') {
             steps {
                 script {
                     input message: 'Are you sure you want to apply the Terraform changes?', ok: 'Apply'
