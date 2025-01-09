@@ -3,12 +3,6 @@ region      = "asia-southeast1"
 secret_name = "terraform-belajar-secret"
 service_account = "terraform-sa@belajar-terraform-kubernetes.iam.gserviceaccount.com"
 
-//bastion
-bastion_name = "my-bastion-host"
-machine_type_bastion = "e2-medium"
-zone_bastion = "asia-southeast1-a"
-image_bastion = "ubuntu-2204-jammy-v20241218"
-
 //gke
 gke_cluster_name = "gke-cluster-todolist"
 gke_location = "asia-southeast1"

@@ -14,12 +14,6 @@ resource "google_container_cluster" "primary" {
       enable_private_nodes = true
       master_ipv4_cidr_block = "10.10.3.0/28"
     }
-    master_authorized_networks_config {
-      cidr_blocks {
-        cidr_block = format("%s/32", var.bastion_nat_ip)
-        display_name = "Bastion Access"
-      }
-    }
 }
 
 resource "google_container_node_pool" "primary_preemptible_nodes" {

@@ -36,8 +36,3 @@ variable "service_account" {
     description = "service account terraform gcp"
     type        = string
 }
-
-variable "bastion_nat_ip" {
-  description = "NAT IP dari Bastion Host"
-  type        = string
-}

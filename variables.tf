@@ -44,27 +44,6 @@ variable "subnet_private_cidr" {
   type        = string
 }
 
-//konfigurasi bastion
-variable "bastion_name" {
-    description = "digunakan untuk mesin konfigurasi"
-    type = string
-}
-
-variable "machine_type_bastion" {
-    description = "mesin yang digunakan untuk bastion"
-    type = string
-}
-variable "zone_bastion" {
-    description = "zone yang digunakan untuk bastion"
-    type = string
-}
-
-variable "image_bastion" {
-    description = "image yang digunakan untuk bastion"
-    type = string
-}
-
-
 //konfigurasi GKE
 variable "gke_cluster_name" {
   description = "nama kluster gke yg digunakan"
