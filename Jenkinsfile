@@ -62,9 +62,6 @@ pipeline {
     post {
         always {
             cleanWs()
-
-
-            //coba-coba
         }
     }
 }
