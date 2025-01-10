@@ -46,6 +46,17 @@ pipeline {
                 }
             }
         }
+
+        stage('Terraform Apply') {
+            steps {
+                script {
+                    input message: 'Are you sure you want to apply the Terraform changes?', ok: 'Apply'
+                    sh """
+                        terraform apply -auto-approve tfplan
+                    """
+                }
+            }
+        }
     }
 
     post {
