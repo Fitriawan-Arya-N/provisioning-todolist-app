@@ -22,7 +22,6 @@ pipeline {
                             gcloud config set project ${GCP_PROJECT_ID}
                             gcloud config set compute/region ${REGION}
                             gcloud config set compute/zone ${REGION}-a
-                            gcloud auth application-default login --scopes=https://www.googleapis.com/auth/cloud-platform
                         """
                     }
                 }
