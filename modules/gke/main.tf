@@ -27,6 +27,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
         preemptible     = true
         machine_type    = var.machine_type_node
         disk_size_gb    = var.machine_disk_node
+        disk_type       = var.disk_type_node
         service_account = var.service_account
         oauth_scopes    = [
             "https://www.googleapis.com/auth/cloud-platform",

@@ -8,6 +8,7 @@ gke_location = "us-central1"
 machine_type_node = "e2-micro"
 machine_disk_node = 30
 node_count = "3"
+disk_type_node = "pd-balanced"
 
 //vpc
 network_name = "my-vpc-netdevops"

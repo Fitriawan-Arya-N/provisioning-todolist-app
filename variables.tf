@@ -64,3 +64,8 @@ variable "machine_disk_node" {
     description = "machine disk"
     type = string
 }
+
+variable "disk_type_node" {
+    description = "machine disk"
+    type = string
+}

@@ -20,4 +20,5 @@ module "gke" {
   node_count           = var.node_count
   machine_type_node    = var.machine_type_node
   machine_disk_node    = var.machine_disk_node
+  disk_type_node       = var.disk_type_node 
 }

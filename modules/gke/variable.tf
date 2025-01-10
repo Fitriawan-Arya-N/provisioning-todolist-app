@@ -23,6 +23,13 @@ variable "machine_disk_node" {
   
 }
 
+variable "disk_type_node" {
+    description = "machine disk"
+    type = string
+    default = "pd-balanced"
+  
+}
+
 variable "node_count" {
     description = "jumlah node"
     type = string
