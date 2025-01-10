@@ -8,11 +8,6 @@ variable "region" {
     type        = string
 }
 
-variable "secret_name" {
-    description = "secret service account terraform gcp"
-    type        = string
-}   
-
 variable "service_account" {
     description = "service account terraform gcp"
     type        = string
