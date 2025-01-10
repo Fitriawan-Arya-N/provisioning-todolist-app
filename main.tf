@@ -16,4 +16,5 @@ module "gke" {
   machine_type_node    = var.machine_type_node
   machine_disk_node    = var.machine_disk_node
   disk_type_node       = var.disk_type_node 
+  vpc_network_id       = var.vpc_network_id
 }

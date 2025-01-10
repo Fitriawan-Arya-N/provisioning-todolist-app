@@ -50,3 +50,7 @@ variable "disk_type_node" {
     description = "machine disk"
     type = string
 }
+
+variable "vpc_network_id" {
+    type        = string
+}
