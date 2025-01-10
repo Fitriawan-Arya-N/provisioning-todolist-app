@@ -59,3 +59,8 @@ variable "node_count" {
     description = "jumlah node"
     type = string
 }
+
+variable "machine_disk_node" {
+    description = "machine disk"
+    type = string
+}

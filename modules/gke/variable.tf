@@ -16,6 +16,13 @@ variable "machine_type_node" {
     default = "e2-micro"
 }
 
+variable "machine_disk_node" {
+    description = "machine disk"
+    type = string
+    default = "30"
+  
+}
+
 variable "node_count" {
     description = "jumlah node"
     type = string
