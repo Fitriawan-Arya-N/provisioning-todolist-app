@@ -26,16 +26,5 @@ variable "network_name_private" {
     default = "subnetwork-vpc-netdevops-private"
 }
 
-variable "subnet_public_cidr" {
-  description = "CIDR range untuk subnet public"
-  type        = string
-  default     = "10.0.0.0/24"
-}
-
-variable "subnet_private_cidr" {
-  description = "CIDR range untuk subnet private"
-  type        = string
-  default     = "10.0.1.0/24"
-}
 
 

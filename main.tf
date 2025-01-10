@@ -3,10 +3,6 @@ module "vpc" {
   project_id           = var.project_id
   region               = var.region
   network_name         = var.network_name
-  network_name_public  = var.network_name_public
-  network_name_private = var.network_name_private
-  subnet_public_cidr   = var.subnet_public_cidr
-  subnet_private_cidr  = var.subnet_private_cidr
 }
 
 module "gke" {
