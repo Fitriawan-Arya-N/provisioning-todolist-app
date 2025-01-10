@@ -7,7 +7,7 @@ variable "gke_cluster_name" {
 variable "gke_location" {
   description = "lokasi kluster gke yg digunakan"
   type = string
-  default = "us-central1-f"
+  default = "asia-southeast1-a"
 }
 
 variable "machine_type_node" {
@@ -47,6 +47,11 @@ variable "service_account" {
 }
 
 variable "vpc_network_id" {
+  description = "ID dari VPC network"
+  type        = string
+}
+
+variable "subnetwork_id" {
   description = "ID dari VPC network"
   type        = string
 }

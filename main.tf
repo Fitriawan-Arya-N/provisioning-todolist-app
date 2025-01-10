@@ -17,4 +17,5 @@ module "gke" {
   machine_disk_node    = var.machine_disk_node
   disk_type_node       = var.disk_type_node 
   vpc_network_id       = module.vpc.vpc_network_id
+  subnetwork_id        = module.vpc.gke_subnet_id
 }

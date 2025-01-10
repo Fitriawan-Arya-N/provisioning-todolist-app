@@ -1,10 +1,10 @@
 project_id  = "belajar-terraform-kubernetes"
-region      = "us-central1"
+region      = "asia-southeast1"
 service_account = "terraform-sa@belajar-terraform-kubernetes.iam.gserviceaccount.com"
 
 //gke
 gke_cluster_name = "gke-cluster-todolist"
-gke_location = "us-central1-f"
+gke_location = "asia-southeast1-a"
 machine_type_node = "e2-micro"
 machine_disk_node = 20
 node_count = "3"
