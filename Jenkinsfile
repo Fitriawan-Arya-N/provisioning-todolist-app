@@ -39,21 +39,11 @@ pipeline {
             }
         }
 
-        stage('Terraform Plan') {
+        stage('Terraform Destroy') {
             steps {
                 script {
                     sh '''
-                    terraform plan -out=tfplan
-                    '''
-                }
-            }
-        }
-
-        stage('Terraform Apply') {
-            steps {
-                script {
-                    sh '''
-                    terraform apply -auto-approve tfplan
+                    terraform destroy -auto-approve
                     '''
                 }
             }
