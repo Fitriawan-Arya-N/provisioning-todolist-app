@@ -7,7 +7,6 @@ module "vpc" {
 
 module "gke" {
   source               = "./modules/gke"
-  
   gke_cluster_name     = var.gke_cluster_name
   gke_location         = var.gke_location
   network_name         = var.network_name
