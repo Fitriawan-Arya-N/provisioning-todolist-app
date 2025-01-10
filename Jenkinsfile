@@ -18,11 +18,10 @@ pipeline {
                 withCredentials([file(credentialsId: 'gcp-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
                         sh """
-                            gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
+                            gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS} --scopes=https://www.googleapis.com/auth/cloud-platform
                             gcloud config set project ${GCP_PROJECT_ID}
                             gcloud config set compute/region ${REGION}
                             gcloud config set compute/zone ${REGION}-a
-                            gcloud auth list
                         """
                     }
                 }
