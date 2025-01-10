@@ -1,18 +1,13 @@
 resource "google_container_cluster" "primary" {
     name      = var.gke_cluster_name
     location  = var.gke_location
-    network   = var.network_name
-    subnetwork = var.network_name_private
+    network   = google_compute_network.vpc_network.id
+    subnetwork = google_compute_subnetwork.private_subnet.id
     
     remove_default_node_pool = true
     initial_node_count = 1
     node_config {
       service_account = var.service_account
-    }
-    private_cluster_config {
-      enable_private_endpoint = false
-      enable_private_nodes = true
-      master_ipv4_cidr_block = "10.10.3.0/28"
     }
 }
 

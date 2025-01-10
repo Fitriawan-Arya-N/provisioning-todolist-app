@@ -19,7 +19,7 @@ variable "machine_type_node" {
 variable "machine_disk_node" {
     description = "machine disk"
     type = string
-    default = "10"
+    default = 20
   
 }
 
