@@ -1,6 +1,5 @@
 project_id  = "belajar-terraform-kubernetes"
 region      = "asia-southeast1"
-secret_name = "terraform-belajar-secret"
 service_account = "terraform-sa@belajar-terraform-kubernetes.iam.gserviceaccount.com"
 
 //gke
