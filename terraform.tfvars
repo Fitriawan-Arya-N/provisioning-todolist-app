@@ -10,5 +10,5 @@ machine_disk_node = 20
 node_count = "3"
 disk_type_node = "pd-balanced"
 
-//vpc
+//vpcc
 network_name = "my-vpc-netdevops"
