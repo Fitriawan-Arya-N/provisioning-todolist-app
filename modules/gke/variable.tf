@@ -7,7 +7,7 @@ variable "gke_cluster_name" {
 variable "gke_location" {
   description = "lokasi kluster gke yg digunakan"
   type = string
-  default = "asia-southeast1"
+  default = "us-central1"
 }
 
 variable "machine_type_node" {
