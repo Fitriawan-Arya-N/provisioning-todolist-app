@@ -52,6 +52,7 @@ pipeline {
                 script {
                     sh """
                         terraform apply -auto-approve tfplan
+                        
                     """
                 }
             }
