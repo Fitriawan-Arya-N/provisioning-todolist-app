@@ -6,7 +6,7 @@ service_account = "terraform-sa@belajar-terraform-kubernetes.iam.gserviceaccount
 gke_cluster_name = "gke-cluster-todolist"
 gke_location = "asia-southeast1"
 machine_type_node = "e2-micro"
-node_count = "4"
+node_count = "3"
 
 //vpc
 network_name = "my-vpc-netdevops"

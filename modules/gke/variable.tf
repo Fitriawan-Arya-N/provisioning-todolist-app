@@ -19,7 +19,7 @@ variable "machine_type_node" {
 variable "node_count" {
     description = "jumlah node"
     type = string
-    default = "4"
+    default = "3"
 }
 
 variable "network_name" {
