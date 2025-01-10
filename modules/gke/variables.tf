@@ -48,5 +48,6 @@ variable "service_account" {
 }
 
 variable "vpc_network_id" {
-    type        = string
+  description = "ID dari VPC network"
+  type        = string
 }
