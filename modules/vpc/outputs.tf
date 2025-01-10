@@ -17,3 +17,11 @@ output "subnet_public_cidr" {
 output "subnet_private_cidr" {
   value = var.subnet_private_cidr
 }
+
+output "vpc_network_id" {
+  value = google_compute_network.vpc_network.id
+}
+
+output "private_subnet_id" {
+  value = google_compute_subnetwork.private_subnet.id
+}
