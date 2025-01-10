@@ -4,7 +4,7 @@ service_account = "terraform-sa@belajar-terraform-kubernetes.iam.gserviceaccount
 
 //gke
 gke_cluster_name = "gke-cluster-todolist"
-gke_location = "us-central1"
+gke_location = "us-central1-f"
 machine_type_node = "e2-micro"
 machine_disk_node = 30
 node_count = "3"
