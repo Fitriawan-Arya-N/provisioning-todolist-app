@@ -14,17 +14,6 @@ variable "network_name" {
     default = "my-vpc-netdevops"
 }
 
-variable "network_name_public" {
-    description = "network untuk komunikasi public"
-    type = string
-    default = "subnetwork-vpc-netdevops-public"
-}
-
-variable "network_name_private" {
-    description = "network untuk komunikasi private"
-    type = string
-    default = "subnetwork-vpc-netdevops-private"
-}
 
 
 

@@ -12,7 +12,3 @@ disk_type_node = "pd-balanced"
 
 //vpc
 network_name = "my-vpc-netdevops"
-network_name_public = "subnetwork-vpc-netdevops-public"
-network_name_private = "subnetwork-vpc-netdevops-private"
-subnet_private_cidr = "10.10.1.0/24"
-subnet_public_cidr = "10.10.2.0/24"

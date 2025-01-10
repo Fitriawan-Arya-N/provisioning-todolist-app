@@ -41,10 +41,6 @@ variable "network_name" {
   type        = string
 }
 
-variable "network_name_private" {
-    description = "network untuk komunikasi private"
-    type = string
-}
 
 variable "service_account" {
     description = "service account terraform gcp"

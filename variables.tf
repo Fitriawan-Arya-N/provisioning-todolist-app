@@ -19,25 +19,6 @@ variable "network_name" {
     type = string
 }
 
-variable "network_name_public" {
-    description = "network untuk komunikasi public"
-    type = string
-}
-
-variable "network_name_private" {
-    description = "network untuk komunikasi private"
-    type = string
-}
-
-variable "subnet_public_cidr" {
-  description = "CIDR range untuk subnet public"
-  type        = string
-}
-
-variable "subnet_private_cidr" {
-  description = "CIDR range untuk subnet private"
-  type        = string
-}
 
 //konfigurasi GKE
 variable "gke_cluster_name" {
