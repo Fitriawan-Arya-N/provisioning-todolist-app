@@ -47,3 +47,6 @@ variable "service_account" {
     type        = string
 }
 
+variable "vpc_network_id" {
+    type        = string
+}
