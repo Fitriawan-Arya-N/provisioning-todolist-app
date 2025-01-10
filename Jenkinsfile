@@ -17,12 +17,12 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'gcp-service-account', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
-                        sh """
-                            gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS} --scopes=https://www.googleapis.com/auth/cloud-platform
-                            gcloud config set project ${GCP_PROJECT_ID}
-                            gcloud config set compute/region ${REGION}
-                            gcloud config set compute/zone ${REGION}-a
-                        """
+                        sh '''#!/bin/bash
+                        gcloud auth activate-service-account --key-file="$GOOGLE_APPLICATION_CREDENTIALS"
+                        gcloud config set project "$GCP_PROJECT_ID"
+                        gcloud config set compute/region "$REGION"
+                        gcloud config set compute/zone "${REGION}-a"
+                        '''
                     }
                 }
             }
@@ -31,10 +31,10 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 script {
-                    sh """
-                        terraform init -backend-config="bucket=bucket-belajar-terraform-kubernetes" \
-                                       -backend-config="prefix=terraform/state"
-                    """
+                    sh '''
+                    terraform init -backend-config="bucket=bucket-belajar-terraform-kubernetes" \
+                                   -backend-config="prefix=terraform/state"
+                    '''
                 }
             }
         }
@@ -42,9 +42,9 @@ pipeline {
         stage('Terraform Plan') {
             steps {
                 script {
-                    sh """
-                        terraform plan -out=tfplan
-                    """
+                    sh '''
+                    terraform plan -out=tfplan
+                    '''
                 }
             }
         }
@@ -52,9 +52,9 @@ pipeline {
         stage('Terraform Apply') {
             steps {
                 script {
-                    sh """
-                        terraform apply -auto-approve tfplan
-                    """
+                    sh '''
+                    terraform apply -auto-approve tfplan
+                    '''
                 }
             }
         }
@@ -62,9 +62,7 @@ pipeline {
 
     post {
         always {
-            //clean
             cleanWs()
-
         }
     }
 }
