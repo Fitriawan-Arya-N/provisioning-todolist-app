@@ -7,13 +7,13 @@ variable "gke_cluster_name" {
 variable "gke_location" {
   description = "lokasi kluster gke yg digunakan"
   type = string
-  default = "us-central1"
+  default = "us-central1-f"
 }
 
 variable "machine_type_node" {
     description = "machine type"
     type = string
-    default = "g1-small"
+    default = "e2-micro"
 }
 
 variable "machine_disk_node" {
