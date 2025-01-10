@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GCP_PROJECT_ID = 'belajar-terraform-kubernetes'
-        REGION         = 'us-central1'
+        REGION         = 'asia-southeast1'
     }
 
     stages {
