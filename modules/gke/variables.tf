@@ -13,13 +13,13 @@ variable "gke_location" {
 variable "machine_type_node" {
     description = "machine type"
     type = string
-    default = "e2-micro"
+    default = "e2-medium"
 }
 
 variable "machine_disk_node" {
     description = "machine disk"
     type = string
-    default = 20
+    default = 25
   
 }
 
